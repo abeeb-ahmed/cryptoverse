@@ -1,0 +1,155 @@
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mb-subtitle {
+  margin-bottom: 50px;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.nav-container {
+  width: 30vw;
+  background-color: #1a1a40;
+  color: lightgray;
+  height: 100vh;
+  position: fixed;
+  padding-top: 20px;
+}
+.navicon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-logo {
+  margin-bottom: 20px;
+}
+
+.main {
+  width: 70vw;
+  background-color: whitesmoke;
+  position: absolute;
+  right: 0;
+}
+.footer {
+  padding: 20px;
+  width: 100%;
+  background-color: #1a1a40;
+  color: lightblue;
+  text-align: center;
+}
+.home,
+.crypto-page,
+.crypo-detail,
+.news-page {
+  padding: 50px 20px;
+}
+.home-section-2 {
+  margin-top: 50px;
+}
+.home-section-3 {
+  margin-top: 50px;
+}
+
+.crypto-details-2 {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.crypto-details-3 {
+  margin-top: 50px;
+}
+.line-chart {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    height: 100%;
+    position: relative;
+  }
+  .mb-subtitle {
+    margin-bottom: 30px !important;
+  }
+  .main {
+    width: 100%;
+    margin-top: 70px;
+    position: absolute;
+  }
+  .home,
+  .crypto-page,
+  .crypo-detail,
+  .news-page {
+    padding: 30px 20px;
+  }
+
+  .toggler {
+    transition: all ease 0.3s;
+  }
+
+  .mobile-navbar-container {
+    height: 70px;
+    width: 100vw;
+    background-color: #1a1a40;
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 2;
+  }
+  .mobile-main-nav-container {
+    background-color: #1a1a40;
+    height: calc(100vh - 70px);
+    padding-top: 50px;
+    color: lightgray;
+    transition: all ease 0.3s;
+    transform: translateX(-110%);
+    display: none;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
+  .toggled {
+    display: block;
+    transform: translateX(0);
+    z-index: 2;
+    transition: all ease 0.3s;
+    position: fixed;
+  }
+  .home-section-2 {
+    margin-top: 30px;
+  }
+  .home-section-3 {
+    margin-top: 30px;
+  }
+  .crypto-details-2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .crypto-details-3 {
+    margin-top: 30px;
+  }
+  .line-chart {
+    margin-top: 30px;
+  }
+}
